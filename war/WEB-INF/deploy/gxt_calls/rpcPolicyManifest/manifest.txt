@@ -1,0 +1,5 @@
+# Module gxt_calls
+# RPC service class, partial path of RPC policy file
+ru.calls.client.services.GreetingService, 5CC4A865D730ED1BDC2613515EFA35C8.gwt.rpc
+ru.calls.client.services.PagingService, F13A450D82ECD0A8E2983BD04D8AF8DD.gwt.rpc
+ru.calls.client.services.CallsService, ED63CD4A36A889251648D4BAEA00FFA3.gwt.rpc

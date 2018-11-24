@@ -1,0 +1,2 @@
+serviceClass: ru.calls.client.services.CallsService
+path: ED63CD4A36A889251648D4BAEA00FFA3.gwt.rpc

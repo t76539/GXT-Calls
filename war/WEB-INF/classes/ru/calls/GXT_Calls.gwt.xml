@@ -21,7 +21,7 @@
 	<set-property name="gwt.logging.enabled" value="TRUE" />
  
 	<!-- GXT stylesheet -->
-	<!-- <stylesheet src="reset.css" /> -->
+	<stylesheet src="reset.css" />
 
 	<!-- Specify the app entry point class. -->
 	<entry-point class='ru.calls.client.GXT_Calls' />

@@ -30,9 +30,12 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements Greetin
 		// Escape data from the client to avoid cross-site script vulnerabilities.
 		input = escapeHtml(input);
 		userAgent = escapeHtml(userAgent);
-
+		
+		String books = checkBookManager();
+		
 		return "Hello, " + input + "!<br><br>I am running " + serverInfo + ".<br><br>It looks like you are using:<br>"
-				+ userAgent;
+				+ userAgent
+				+ "<br><b>" + books;
 	}
 
 	/**
@@ -47,5 +50,14 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements Greetin
 			return null;
 		}
 		return html.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+	}
+	
+	private String checkBookManager() {
+		BookManager manager = new BookManager();
+		manager.setup();
+		manager.create();
+		String books = manager.displayBooks();
+		manager.exit();				
+		return books;
 	}
 }

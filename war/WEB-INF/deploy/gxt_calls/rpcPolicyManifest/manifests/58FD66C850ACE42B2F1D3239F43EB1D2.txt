@@ -1,0 +1,2 @@
+serviceClass: ru.calls.client.services.GreetingService
+path: 5CC4A865D730ED1BDC2613515EFA35C8.gwt.rpc

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>      
+<!-- This file copy to war/WEB-INF/classes -->
+  <session-factory>
+    <!-- Database connection settings -->
+    <!-- 
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/bookstore</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">P@ssw0rd</property>
+    <property name="show_sql">true</property>
+     -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://192.168.128.235:5432/_test_</property>
+    <property name="hibernate.connection.username">dbuser</property>
+    <property name="hibernate.connection.password">slw</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+        
+    <mapping class="ru.calls.shared.Book" />
+     
+  </session-factory>
+</hibernate-configuration>

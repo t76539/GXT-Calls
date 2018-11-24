@@ -1,0 +1,2 @@
+serviceClass: ru.calls.client.services.PagingService
+path: F13A450D82ECD0A8E2983BD04D8AF8DD.gwt.rpc
